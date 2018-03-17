@@ -1,0 +1,70 @@
+.display-between{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+.display-around{
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+}
+.display-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @mixin atSmall{
+    flex-direction: row;
+  }
+}
+.partner_logo{
+  width: 80%;
+  max-height: 40%;
+  padding: 5%;
+
+  @mixin atSmall{
+    width: 30%;
+    max-height: 200px;
+    padding: 1% 5%;
+  }
+}
+.svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFF;
+}
+.item{
+  vertical-align: top;
+  picture{
+    img{
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+  &_info{
+    text-align: justify;
+    padding: 1%;
+    h1{
+      font-size: 1.3em
+    }
+    p{
+      padding: 5%;
+    }
+  }
+
+  &--smaller{
+    vertical-align: top;
+    picture{
+      img{
+        display: block;
+        margin: 0 auto;
+        vertical-align: top;
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.container{
+  position: relative;
+  .display-4{
+    font-size: 2em;
+
+    @mixin atSmall{
+      font-size: 2.5em;
+    }
+  }
+  &--background{
+    background: url("../img/bg/bg2.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &--black{
+    background-color: #111111;
+    color: #FFF;
+    padding: 3% 0;
+    hr{
+      background-color: #FFF;
+    }
+  }
+  &--white{
+    background-color: rgba(255,255,255,0.6);
+    color: #111111;
+    padding: 3% 0;
+    hr{
+      background-color: #000;
+    }
+  }
+  &--paralax1{
+    background: url("../img/bg/bg5.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:50vh;
+  }
+  &--paralax2{
+    background: url("../img/bg/bg6.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:50vh;
+  }
+  &--paralax3{
+    background: url("../img/bg/bg4.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:50vh;
+  }
+  &--paralax4{
+    background: url("../img/bg/bg8.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:50vh;
+  }
+  &--paralax5{
+    background: url("../img/bg/bg9.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:50vh;
+  }
+  &--paralax6{
+    background: url("../img/bg/bg10.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:50vh;
+  }
+  &--28black{
+    background: url("../img/bg/bg3.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &--28Drinks{
+    background: url("../img/bg/bg5.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &--28icetea{
+    background: url("../img/bg/bg7.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &--CanadaGeese{
+    background: url("../img/bg/bg12.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &--orders{
+    background: url("../img/bg/bg13.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &--contact{
+    background: url("../img/bg/bg14.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}

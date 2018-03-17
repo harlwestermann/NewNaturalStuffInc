@@ -1,0 +1,90 @@
+extends modules/main_layout.pug
+
+block vars
+  - var title = '28 Black'
+block content
+  .container-fluid.container--28black
+    .container
+      include modules/_nav-bar.pug
+      .jumbotron
+        img.jumbotron_logo(src="img/28black/Logo/28_Black_Logo_White.svg")
+        hr.my-4
+        h1.display-4.text-center.bold Be different. Drink #[span 28 Black]!  
+      .arrow
+        svg#arrow(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 417.6 237.2')
+          polyline(fill='none', stroke='#DFA726', stroke-width='50', stroke-linecap='round', stroke-miterlimit='10', points='37.9,29 208.7,199.8 379.7,28.8 ')
+    
+  .container-fluid.container--black
+    .container
+      p.lead.text-justify
+        | Back when “gummi bear” was the flavour for energy drinks, and energy drinks were primarily a beverage for robust men with a yearning for wings, people at 28 Black became convinced that there had to be another way.
+      p.lead.text-justify
+        | Which is why 2008 saw the creation of one of the first energy drink that didn't taste like gummi bears, contain taurine or limit its appeal to tough guys: 28 Black, in other words, the energy drink that is different – for different lifestyles, different expectations and new challenges every day. For people living life to the full and leaving routine behind. For people who always have something going on tomorrow.
+      p.lead.text-justify
+        | 28 Black is sold worldwide and is available in food retailers, beverage shops and convenience stores, as well as clubs, bars and restaurants.
+      .display-row
+        .svg
+          img(src='img/28black/Icons/28Black_Lactosefrei.svg', alt='28Black_Lactosefrei.svg', title='28Black_Lactosefrei.svg')
+          span.caption lactose-free
+        .svg
+          img(src='img/28black/Icons/28Black_Vegan_en_alt.svg', alt='28Black_Vegan_en_alt.svg', title='28Black_Vegan_en_alt.svg')
+          span.caption vegan
+        .svg
+          img(src='img/28black/Icons/28Black_Taurinfrei.svg', alt='28Black_Taurinfrei.svg', title='28Black_Taurinfrei.svg')
+          span.caption taurine-free
+  .container-fluid.container--paralax3
+  .container-fluid.container--black
+    .container      
+      .display-row
+        .item
+          picture
+            source(srcset="img/28black/Acai/large_809w.png 809w, img/28black/Acai/large_1618w.png 1618w" media="(min-width: 1200px)")
+            source(srcset="img/28black/Acai/medium_350w.png 350w, img/28black/Acai/medium_700w.png 700w" media="(min-width: 900px)")
+            source(srcset="img/28black/Acai/small_200w.png 200w, img/28black/Acai/small_400w.png 400w" media="(min-width: 500px)")
+            img(srcset="img/28black/Acai/smaller_120w.png 120w, img/28black/Acai/smaller_240w.png 240w" alt="Açaí")
+          .item_info
+            h1.text-center 28 Black Açaí
+            p.text-center  With the unmistakably fruity taste of açaí berries.
+            p.text-center
+              | Energy Drink
+              br
+              | 250 ml
+              br
+              | Aluminium Can
+              br
+              | Non-alcoholic Beverages
+        .item
+          picture
+            source(srcset="img/28black/SourMango/large_809w.png 809w, img/28black/SourMango/large_1618w.png 1618w" media="(min-width: 1200px)")
+            source(srcset="img/28black/SourMango/medium_350w.png 350w, img/28black/SourMango/medium_700w.png 700w" media="(min-width: 900px)")
+            source(srcset="img/28black/SourMango/small_200w.png 200w, img/28black/SourMango/small_400w.png 400w" media="(min-width: 500px)")
+            img(srcset="img/28black/SourMango/smaller_120w.png 120w, img/28black/SourMango/smaller_240w.png 240w" alt="Sour Mango Kiwi")
+          .item_info
+            h1.text-center 28 Black Sour Mango-Kiwi
+            p.text-center The fruity sour taste of mango and kiwi.
+            p.text-center
+              | Energy Drink
+              br
+              | 250 ml
+              br
+              | Aluminium Can
+              br
+              | Non-alcoholic Beverages      
+        .item
+          picture
+            source(srcset="img/28black/Classic/large_809w.png 809w, img/28black/Classic/large_1618w.png 1618w" media="(min-width: 1200px)")
+            source(srcset="img/28black/Classic/medium_350w.png 350w, img/28black/Classic/medium_700w.png 700w" media="(min-width: 900px)")
+            source(srcset="img/28black/Classic/small_200w.png 200w, img/28black/Classic/small_400w.png 400w" media="(min-width: 500px)")
+            img(srcset="img/28black/Classic/smaller_120w.png 120w, img/28black/Classic/smaller_240w.png 240w" alt="Classic")
+          .item_info
+            h1.text-center 28 Black Classic
+            p.text-center For fans of the classic taste.
+            p.text-center
+              | Energy Drink
+              br
+              | 250 ml
+              br
+              | Aluminium Can
+              br
+              | Non-alcoholic Beverages
+  include modules/_footer.pug         

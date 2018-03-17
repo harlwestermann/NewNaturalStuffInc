@@ -1,0 +1,75 @@
+extends modules/main_layout.pug
+
+block vars
+  - var title = "Canada Geese"
+
+block content
+  
+  .container-fluid.container--CanadaGeese
+    .container
+      include modules/_nav-bar.pug
+      .jumbotron.jumbotron-white
+        img.jumbotron_logo(src="img/CanadaGeese/Logo/canada-gueese.svg")
+        hr.my-4
+        h1.display-4.text-center.bold Canada Geese, the natural mineral water from Nova Scotia!  
+      .arrow
+        svg#arrow(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 417.6 237.2')
+          polyline(fill='none', stroke='#DFA726', stroke-width='50', stroke-linecap='round', stroke-miterlimit='10', points='37.9,29 208.7,199.8 379.7,28.8 ')
+    
+  .container-fluid.container--white
+    .container
+      p.lead
+        | Canada Geese, the Natural Thirst Quenching Mineral Water bottled at source in Middleton Nova Scotia, is a refreshing and healthy beverage with natural minerals.
+      p.lead
+        | It offers a fascinating and pristine slice of nature whose roots go back to a time more than 1.2 billion years ago, when enormous rock formations were shifted and folded, continuously weathered by wind and water. As this process went on, water was sealed in stone deep beneath the Earth’s surface, protecting its purity for millions of years. This gently sparkling water with a balanced and harmonious taste is perfect in satisfying thirst and accompanying food.
+      p.lead
+        |Balanced and harmonious taste. 
+        |Outstanding water quality. 
+        |High in calcium.
+        |The perfect thirst-quencher. 
+        |The ideal companion to food.
+      .display-row
+        .item.item--smaller
+          picture
+            source(srcset="img/CanadaGeese/750ml/large_747w.png 747w, img/CanadaGeese/750ml/large_1494w.png 1494w" media="(min-width: 1200px)")
+            source(srcset="img/CanadaGeese/750ml/medium_300w.png 300w, img/CanadaGeese/750ml/medium_600w.png 600w" media="(min-width: 900px)")
+            source(srcset="img/CanadaGeese/750ml/small_200w.png 200w, img/CanadaGeese/750ml/small_400w.png 400w" media="(min-width: 500px)")
+            img(srcset="img/CanadaGeese/750ml/smaller_100w.png 100w, img/CanadaGeese/750ml/smaller_200w.png 200w" alt="CanadaGeese")
+          .item_info
+            h1.text-center Carbonated
+            p.text-center
+              | Mineral Water
+              br
+              | 750ml
+              br
+              | Glass Bottle
+        .item.item--smaller
+          picture
+            source(srcset="img/CanadaGeese/330ml/Carbonated/large_590w.png 590w, img/CanadaGeese/330ml/Carbonated/large_1180w.png 1180w" media="(min-width: 1200px)")
+            source(srcset="img/CanadaGeese/330ml/Carbonated/medium_250w.png 250w, img/CanadaGeese/330ml/Carbonated/medium_500w.png 500w" media="(min-width: 900px)")
+            source(srcset="img/CanadaGeese/330ml/Carbonated/small_150w.png 150w, img/CanadaGeese/330ml/Carbonated/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/CanadaGeese/330ml/Carbonated/smaller_70w.png 70w, img/CanadaGeese/330ml/Carbonated/smaller_140w.png 140w" alt="CanadaGeese")
+          .item_info
+            h1.text-center Carbonated
+            p.text-center
+              | Mineral Water
+              br
+              | 330ml
+              br
+              | Glass Bottle
+        .item.item--smaller
+          picture
+            source(srcset="img/CanadaGeese/330ml/Still/large_590w.png 590w, img/CanadaGeese/330ml/Still/large_733w.png 733w" media="(min-width: 1200px)")
+            source(srcset="img/CanadaGeese/330ml/Still/medium_250w.png 250w, img/CanadaGeese/330ml/Still/medium_500w.png 500w" media="(min-width: 900px)")
+            source(srcset="img/CanadaGeese/330ml/Still/small_150w.png 150w, img/CanadaGeese/330ml/Still/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/CanadaGeese/330ml/Still/smaller_70w.png 70w, img/CanadaGeese/330ml/Still/smaller_140w.png 140w" alt="CanadaGeese")
+          .item_info
+            h1.text-center Still
+            p.text-center
+              | Mineral Water
+              br
+              | 330ml
+              br
+              | Glass Bottle
+  .container-fluid.container--paralax6  
+  include modules/_footer.pug     

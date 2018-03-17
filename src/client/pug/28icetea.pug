@@ -1,0 +1,89 @@
+extends modules/main_layout.pug
+
+block vars
+  - var title = "28 Ice Tea"
+block content
+  .container-fluid.container--28icetea
+    .container
+      include modules/_nav-bar.pug
+      .jumbotron
+        img.jumbotron_logo(src="img/IceTea/Logo/icetea-white.svg")
+        hr.my-4
+        h1.display-4.text-center.bold #[span 28 ICE TEA]: The tasTEA refreshment!  
+      .arrow
+        svg#arrow(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 417.6 237.2')
+          polyline(fill='none', stroke='#DFA726', stroke-width='50', stroke-linecap='round', stroke-miterlimit='10', points='37.9,29 208.7,199.8 379.7,28.8 ')
+    
+  .container-fluid.container--white
+    .container
+      h1.display-4
+        | No time to make your own ice tea?
+      p.lead
+        | No worries, 28 Ice Tea tastes like homemade!
+        | Made with essences of black, green and white tea 28 Ice Tea is enriched by high quality ingredients like juice or blossom honey. 28 Ice Tea quenches your thirst and puts a smile on your face.
+      p.lead
+        | It can be enjoyed all year long, cold or warm.
+        | Discover the range of our tasTEA Ice Teas.
+      .display-row
+        .item        
+          picture
+            source(srcset="img/IceTea/BB/large_376w.png 376w, img/IceTea/BB/large_752w.png 752w" media="(min-width: 1200px)")
+            source(srcset="img/IceTea/BB/medium_200w.png 200w, img/IceTea/BB/medium_400w.png 400w" media="(min-width: 900px)")
+            source(srcset="img/IceTea/BB/small_150w.png 150w, img/IceTea/BB/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/IceTea/BB/smaller_70w.png 70w, img/IceTea/BB/smaller_140w.png 140w" alt="Blueberry White Tea")
+          .item_info
+            h1.text-center Blueberry White Tea
+            p
+              | It feels like summer. The velvet touch of white tea with luscious blueberries.
+            p
+              | Lactose-free, no colours, no artificial flavours
+        .item      
+          picture
+            source(srcset="img/IceTea/GT/large_376w.png 376w, img/IceTea/GT/large_752w.png 752w" media="(min-width: 1200px)")
+            source(srcset="img/IceTea/GT/medium_200w.png 200w, img/IceTea/GT/medium_400w.png 400w" media="(min-width: 900px)")
+            source(srcset="img/IceTea/GT/small_150w.png 150w, img/IceTea/GT/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/IceTea/GT/smaller_70w.png 70w, img/IceTea/GT/smaller_140w.png 140w" alt="Green Tea Honey")
+          .item_info
+            h1.text-center Green Tea Honey
+            p
+              | A gentle hug right when you need it. The well-being of green tea with a sweet touch of honey.
+            p
+              | Lactose-free, no colours, no artificial flavours
+        .item
+          picture
+            source(srcset="img/IceTea/L/large_376w.png 376w, img/IceTea/L/large_752w.png 752w" media="(min-width: 1200px)")
+            source(srcset="img/IceTea/L/medium_200w.png 200w, img/IceTea/L/medium_400w.png 400w" media="(min-width: 900px)")
+            source(srcset="img/IceTea/L/small_150w.png 150w, img/IceTea/L/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/IceTea/L/smaller_70w.png 70w, img/IceTea/L/smaller_140w.png 140w" alt="Lemon")
+          .item_info
+            h1.text-center Lemon
+            p
+              | A twist of lemon to stay sharp and focused black tea with the fruity zest of lemon.
+            p
+              | Vegan, lactose-free, no colours, no artificial flavours
+        .item
+          picture
+            source(srcset="img/IceTea/P/large_376w.png 376w, img/IceTea/P/large_752w.png 752w" media="(min-width: 1200px)")
+            source(srcset="img/IceTea/P/medium_200w.png 200w, img/IceTea/P/medium_400w.png 400w" media="(min-width: 900px)")
+            source(srcset="img/IceTea/P/small_150w.png 150w, img/IceTea/P/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/IceTea/P/smaller_70w.png 70w, img/IceTea/P/smaller_140w.png 140w" alt="Peach")
+          .item_info          
+            h1.text-center Peach
+            p
+              | Always time for a peach burst. Black tea with the taste of sunny peaches.
+            p
+              | Vegan, lactose-free, no colours, no artificial flavours
+        .item          
+          picture
+            source(srcset="img/IceTea/PG/large_376w.png 376w, img/IceTea/PG/large_752w.png 752w" media="(min-width: 1200px)")
+            source(srcset="img/IceTea/PG/medium_200w.png 200w, img/IceTea/PG/medium_400w.png 400w" media="(min-width: 900px)")
+            source(srcset="img/IceTea/PG/small_150w.png 150w, img/IceTea/PG/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/IceTea/PG/smaller_70w.png 70w, img/IceTea/PG/smaller_140w.png 140w" alt="Pomegranate")
+          .item_info
+            h1.text-center Pomegranate
+            p
+              | The exotic splash to overcome “Blue Mondays”. Refreshing green tea with succulent pomegranate.
+            p
+              | Lactose-free, no colours, no artificial flavours
+  .container-fluid.container--paralax5     
+  include modules/_footer.pug          
