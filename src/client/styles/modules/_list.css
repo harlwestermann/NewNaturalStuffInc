@@ -12,24 +12,24 @@
   &-28black{
     picture{
       img{
-        width: 12%;
-        margin: 0 -2.5%;
+        width: 29%;
+        margin: 2% -5.5%;
       }
     }
   }
   &-28drinks{
     picture{
       img{
-        width: 12%;
-        margin: 0 -3.5%;
+        width: 26%;
+        margin: 0 -7.5%;
       }
     }
   }
   &-28icetea{
     picture{
       img{
-        width: 8%;
-        margin: 0 -2%;
+        width: 18%;
+        margin: 0 -5.5%;
       }
     }
   }
@@ -37,9 +37,52 @@
     picture{
       img{
         padding: 1%;
-        width: 8.5%;
-        margin: 0 -2%;
+        width: 18.5%;
+        margin: 0 -3.5%;
       }
     }
   }
+  &-hostess{
+    picture{
+      img{
+        display: block;
+        margin: 4% auto;
+        padding: 1%;
+        width: 80%;
+      }
+    }
+  }
+  &-candy{
+    picture{
+      img{
+        display: block;
+        margin: 4% auto;
+        padding: 1%;
+        width: 80%;
+      }
+    }
+  }
+  &-pringles{
+    picture{
+      img{
+        display: block;
+        margin: 4% auto;
+        padding: 1%;
+        width: 40%;
+      }
+    }
+  }
+  &-planters{
+    picture{
+      img{
+        display: block;
+        margin: 4% auto;
+        padding: 1%;
+        width: 60%;
+      }
+    }
+  }
+}
+.products .row{
+  margin-top: 1%;
 }

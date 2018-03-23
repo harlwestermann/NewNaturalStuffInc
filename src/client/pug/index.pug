@@ -11,28 +11,28 @@ block content
         .jumbotron
           h1.display-4.text-center.bold Welcome to #[span Natural Stuff]!
           p.lead.text-center
-            | For over 20 years, Natural Stuff Inc. has been distributing 
-            | high-quality, value products. Since 1994, our family-owned business 
-            | and delivery system have been satisfying grocery, chain, discount 
-            | department, and convenience store customers.
+            | Natural Stuff Inc. has been distributing 
+            | high-quality, value products for over 20 years. Since 1994, our family-owned business 
+            | and delivery system have been satisfying grocery, gas station, chain, discount 
+            | department, drug and convenience store customers. We always value feedback
             hr.my-4
           p.text-center
             | Natural Stuff Inc. is always searching for new and exciting 
             | snack food &amp; drink products to boost in-store sales and 
             | drive business.
           p.lead.text-center
-            a.btn.btn-warning.btn-lg(href='#', role='button') Order Now!
+            a.btn.btn-warning.btn-lg(href='http://naturalstuffinc.000webhostapp.com/order/', role='button') Order Now!
         .arrow
           svg#arrow(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 417.6 237.2')
             polyline(fill='none', stroke='#DFA726', stroke-width='50', stroke-linecap='round', stroke-miterlimit='10', points='37.9,29 208.7,199.8 379.7,28.8 ')
   .container-fluid.container--black
-    .container
+    .container.products
       .row
         .col-sm-12
-          h1.display-4.text-center Our #[span Products]!
+          h1.display-4.text-center Products #[span We Carry]!
             hr.my-4
       .row
-        .col-sm-6.list-28black
+        .col-sm-3.list-28black
           a(href="28black.html")
             img.brands_logo(src="img/28black/Logo/28_Black_Logo_White.svg" alt="28BLACK Logo")
             .list  
@@ -54,7 +54,7 @@ block content
                   source(srcset="img/28black/Classic/medium_350w.png 350w, img/28black/Classic/medium_700w.png 700w" media="(min-width: 900px)")
                   source(srcset="img/28black/Classic/small_200w.png 200w, img/28black/Classic/small_400w.png 400w" media="(min-width: 500px)")
                   img(srcset="img/28black/Classic/smaller_120w.png 120w, img/28black/Classic/smaller_240w.png 240w" alt="Classic")
-        .col-sm-6.list-28drinks
+        .col-sm-3.list-28drinks
           a(href="28drinks.html")
             img.brands_logo(src="img/28drinks/Logo/28_DRINKS_White.svg" alt="28DRINKS Logo")
             .list
@@ -82,8 +82,7 @@ block content
                   source(srcset="img/28drinks/Grape/medium_250w.png 250w, img/28drinks/Grape/medium_500w.png 500w" media="(min-width: 900px)")
                   source(srcset="img/28drinks/Grape/small_150w.png 150w, img/28drinks/Grape/small_300w.png 300w" media="(min-width: 500px)")
                   img(srcset="img/28drinks/Grape/smaller_80w.png 80w, img/28drinks/Grape/smaller_160w.png 160w" alt="Pink Grapefruit Mint")
-      .row
-        .col-sm-6.list-28icetea
+        .col-sm-3.list-28icetea
           a(href="28icetea.html")
             img.brands_logo(src="img/IceTea/Logo/icetea-white.svg" alt="28ICETEA Logo")
             .list  
@@ -117,7 +116,7 @@ block content
                   source(srcset="img/IceTea/P/medium_200w.png 200w, img/IceTea/P/medium_400w.png 400w" media="(min-width: 900px)")
                   source(srcset="img/IceTea/P/small_150w.png 150w, img/IceTea/P/small_300w.png 300w" media="(min-width: 500px)")
                   img(srcset="img/IceTea/P/smaller_70w.png 70w, img/IceTea/P/smaller_140w.png 140w" alt="Peach")
-        .col-sm-6.list-canadageese
+        .col-sm-3.list-canadageese
           a(href="canada-geese.html")
             img.brands_logo(src="img/CanadaGeese/Logo/canada-gueese.svg" alt="CanadaGeese Logo")
             .list    
@@ -138,11 +137,46 @@ block content
                   source(srcset="img/CanadaGeese/750ml/large_747w.png 747w, img/CanadaGeese/750ml/large_1494w.png 1494w" media="(min-width: 1200px)")
                   source(srcset="img/CanadaGeese/750ml/medium_300w.png 300w, img/CanadaGeese/750ml/medium_600w.png 600w" media="(min-width: 900px)")
                   source(srcset="img/CanadaGeese/750ml/small_200w.png 200w, img/CanadaGeese/750ml/small_400w.png 400w" media="(min-width: 500px)")
-                  img(srcset="img/CanadaGeese/750ml/smaller_100w.png 100w, img/CanadaGeese/750ml/smaller_200w.png 200w" alt="CanadaGeese")      
+                  img(srcset="img/CanadaGeese/750ml/smaller_100w.png 100w, img/CanadaGeese/750ml/smaller_200w.png 200w" alt="CanadaGeese")
+      .row
+        .col-sm-3.list-hostess
+          a(href="#")
+            img.brands_logo(src="img/bread/logo1.svg" alt="Hostess Logo")
+            .list    
+              .list_product
+                picture
+                  source(srcset="img/bread/large_1800w.png" media="(min-width: 1800px)")
+                  source(srcset="img/bread/medium_1000w.png" media="(min-width: 1200px)")
+                  img(srcset="img/bread/small_500w.png" alt="CanadaGeese")
+        
+        .col-sm-3.list-candy
+          a(href="#")
+            img.brands_logo(src="img/candy/candy.svg" alt="Candy Logo")
+            .list    
+              .list_product
+                picture
+                  img(srcset="img/candy/candy.png" alt="candy")
+        .col-sm-3.list-pringles
+          a(href="#")
+            img.brands_logo(src="img/pringles/logo.svg" alt="Pringles Logo")
+            .list    
+              .list_product
+                picture
+                  img(srcset="img/pringles/product.png" alt="Pringles Cans")
+        .col-sm-3.list-planters
+          a(href="#")
+            img.brands_logo(src="img/planters/logo.svg" alt="Planters Logo")
+            .list    
+              .list_product
+                picture
+                  img(srcset="img/planters/product.png" alt="Planters product")
+        
+  
+   
   .container-fluid.container--paralax1
   .container-fluid.container--white
     .container
-      h1.display-4.text-center Some of Our #[span Partners]!
+      h1.display-4.text-center Some of Our #[span Highly Valued Distribution Outlets]!
         hr.my-4
       .display-row
         img.partner_logo(src="img/companies/antojo-logo.svg" alt="company")

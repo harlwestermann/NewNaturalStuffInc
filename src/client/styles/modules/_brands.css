@@ -6,15 +6,14 @@
   position: relative;
 
   &_logo{
-    width: 50%;
+    width: 25%;
 
     display: block;
     margin: 0 auto;
     position: relative;
 
     @mixin atSmall{
-      width: 15%;
-      max-height: 80px;
+      width: 30%;
     }
   }
 }
