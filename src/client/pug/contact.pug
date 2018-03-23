@@ -1,0 +1,19 @@
+extends modules/main_layout.pug
+
+block vars
+  - var title = "Contact"
+
+block content
+  .container-fluid.container--contact
+    .container
+        include modules/_nav-bar.pug
+        .jumbotron
+          h1.display-4.text-center.bold Information
+          hr.my-4
+          h2.lead.text-center Mailing Address
+          p 255 Duncan Mill Road, #504
+          p Toronto
+          p ON&nbsp;&nbsp;&nbsp;M3B 3H9 
+          p Canada
+        br 
+  include modules/_footer.pug

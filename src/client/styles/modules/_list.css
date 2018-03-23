@@ -1,0 +1,45 @@
+.list{
+  text-align: center;
+  &_product{
+    display: inline;
+  }
+  &_product:hover{
+    img{
+      transition: all 1s ease;
+      transform: scale3d(1.2,1.2,4);
+    }
+  }
+  &-28black{
+    picture{
+      img{
+        width: 12%;
+        margin: 0 -2.5%;
+      }
+    }
+  }
+  &-28drinks{
+    picture{
+      img{
+        width: 12%;
+        margin: 0 -3.5%;
+      }
+    }
+  }
+  &-28icetea{
+    picture{
+      img{
+        width: 8%;
+        margin: 0 -2%;
+      }
+    }
+  }
+  &-canadageese{
+    picture{
+      img{
+        padding: 1%;
+        width: 8.5%;
+        margin: 0 -2%;
+      }
+    }
+  }
+}

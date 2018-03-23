@@ -1,0 +1,19 @@
+extends modules/main_layout.pug
+
+block vars
+  - var title = '28 Black'
+block content
+  .container-fluid.container--orders
+    .container
+        include modules/_nav-bar.pug
+        .jumbotron
+          h1.display-4.text-center.bold Orders
+          hr.my-4
+          h2.lead.text-center For Order Inquiries:
+          p.lead.text-center Atlantic Orders: atorders@naturalstuffinc.com
+          p.lead.text-center Ontario Orders: onorders@naturalstuffinc.com
+          hr.my-4
+          p.lead.text-center
+            a.btn.btn-warning.btn-lg(href='#', role='button') Order Now!
+        br 
+  include modules/_footer.pug 

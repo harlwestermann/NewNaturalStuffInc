@@ -1,0 +1,80 @@
+extends modules/main_layout.pug
+
+block vars
+  - var title = "28 Drinks"
+block content
+  .container-fluid.container--28Drinks
+    .container
+      include modules/_nav-bar.pug
+      .jumbotron
+        img.jumbotron_logo(src="img/28drinks/Logo/28_DRINKS_White.svg")
+        hr.my-4
+        h1.display-4.text-center.bold #[span 28 Drinks] – Ready for a cocktail?        
+      .arrow
+        svg#arrow(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 417.6 237.2')
+          polyline(fill='none', stroke='#DFA726', stroke-width='50', stroke-linecap='round', stroke-miterlimit='10', points='37.9,29 208.7,199.8 379.7,28.8 ')
+            
+  .container-fluid.container--black
+    .container
+      p.lead.text-justify
+        | The 28 drinks Bitter Edition includes the classic flavours of tonic water, bitter lemon and ginger ale. 
+        |All of the varieties are available in trays of 24 x 0.25 l cans or reusable cases of 12 x 1 litre Pet bottles.
+      .display-row
+        .item      
+          picture
+            source(srcset="img/28drinks/Acai/large_504w.png 504w, img/28drinks/Acai/large_1008w.png 1008w" media="(min-width: 1200px)")
+            source(srcset="img/28drinks/Acai/medium_250w.png 250w, img/28drinks/Acai/medium_500w.png 500w" media="(min-width: 900px)")
+            source(srcset="img/28drinks/Acai/small_150w.png 150w, img/28drinks/Acai/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/28drinks/Acai/smaller_80w.png 80w, img/28drinks/Acai/smaller_160w.png 160w" alt="Açaí")
+        .item      
+          picture
+            source(srcset="img/28drinks/BitterLemon/large_504w.png 504w, img/28drinks/BitterLemon/large_1008w.png 1008w" media="(min-width: 1200px)")
+            source(srcset="img/28drinks/BitterLemon/medium_250w.png 250w, img/28drinks/BitterLemon/medium_500w.png 500w" media="(min-width: 900px)")
+            source(srcset="img/28drinks/BitterLemon/small_150w.png 150w, img/28drinks/BitterLemon/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/28drinks/BitterLemon/smaller_80w.png 80w, img/28drinks/BitterLemon/smaller_160w.png 160w" alt="Bitter Lemon")
+          
+        .item
+          picture
+            source(srcset="img/28drinks/Ginger/large_504w.png 504w, img/28drinks/Ginger/large_1008w.png 1008w" media="(min-width: 1200px)")
+            source(srcset="img/28drinks/Ginger/medium_250w.png 250w, img/28drinks/Ginger/medium_500w.png 500w" media="(min-width: 900px)")
+            source(srcset="img/28drinks/Ginger/small_150w.png 150w, img/28drinks/Ginger/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/28drinks/Ginger/smaller_80w.png 80w, img/28drinks/Ginger/smaller_160w.png 160w" alt="Ginger Ale")
+        .item
+          picture
+            source(srcset="img/28drinks/Grape/large_504w.png 504w, img/28drinks/Grape/large_1008w.png 1008w" media="(min-width: 1200px)")
+            source(srcset="img/28drinks/Grape/medium_250w.png 250w, img/28drinks/Grape/medium_500w.png 500w" media="(min-width: 900px)")
+            source(srcset="img/28drinks/Grape/small_150w.png 150w, img/28drinks/Grape/small_300w.png 300w" media="(min-width: 500px)")
+            img(srcset="img/28drinks/Grape/smaller_80w.png 80w, img/28drinks/Grape/smaller_160w.png 160w" alt="Pink Grapefruit Mint")
+      .display-row
+        .item_info
+          h1.text-center AÇAÍ
+          p
+            | With its luminescent crimson colour and the fruity
+            | flavour of the Brazilian açaí berry, 28 DRINKS Açaí
+            | brings a touch of the exotic and tasteful variety
+            | into everyday life.
+            | adding a burst of colour and flavour to cocktails, this drink is
+            | delicious straight with ice.  
+        .item_info
+          h1.text-center BITTER LEMON
+          p
+            | 28 DRINKS Bitter Lemon goes especially well with vodka or gin.
+            | Enjoyed on its own, the combination of refreshing fruit
+            | and the distinctive notes of bitter creates
+            | a highly refined experience.   
+        .item_info
+          h1.text-center GINGER ALE
+          p
+            | 28 DRINKS Ginger Ale combines elegant freshness
+            | with a good dose of sweetness and piquant sharpness.
+            | It's no wonder that this refined delicacy is more popular than ever –
+            | even without something strong to go with it.
+        .item_info
+          h1.text-center PINK GRAPEFRUIT MINT
+          p
+            | 28 DRINKS Pink Grapefruit Mint is a new and incomparable
+            | taste experience. The perfect basis for extraordinary coctail drinks and
+            | bittersweet satisfaction whenever it is enjoyed straight.
+  .container-fluid.container--paralax4       
+  include modules/_footer.pug          
+               

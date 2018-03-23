@@ -1,0 +1,41 @@
+.navbar{
+  &-toggler{
+    background-color: #F8B247;
+  }
+  .show{
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  &_logo{
+    width: 100%;
+    @mixin atSmall{
+      width: 80%;
+    }
+  }
+
+  &-nav{
+    color: #FFF;
+  }
+  .nav{
+    &-item{
+      margin-left:20px;
+      font-size: 1.3em;
+      font-weight: 200;
+      text-transform: uppercase;
+      background-color: rgba(0,0,0,0.7);
+      a.nav-link{
+        color: #FFF;
+      }
+    }
+    &-item:hover{
+      background-color: rgba(0,0,0,0.8);
+    }
+  }
+  &-dark{
+    color: #FFF;
+
+  }
+}
+.dropdown-item{
+  color: #FFF;
+}

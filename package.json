@@ -1,0 +1,36 @@
+{
+  "name": "naturalstuffinc",
+  "version": "1.0.0",
+  "description": "Home Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferrazrx/naturalstuffinc.git"
+  },
+  "author": "Provide Flow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferrazrx/provideflow_website/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-order": "^1.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.8",
+    "postcss-import": "^10.0.0",
+    "postcss-mixins": "^6.1.0",
+    "postcss-nested": "^2.1.2",
+    "postcss-simple-vars": "^4.1.0"
+  },
+  "dependencies": {}
+}
